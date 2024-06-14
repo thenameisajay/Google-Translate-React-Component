@@ -1,6 +1,6 @@
 # Next.js TypeScript Starter Pack with ESLint, Prettier, and Tailwind CSS
 
-This starter pack provides a solid foundation for building Next.js applications with TypeScript, ESLint, Prettier, and Tailwind CSS. It includes pre-configured setups for maintaining code quality and formatting standards, along with pre-commit hooks for seamless development.
+This starter pack provides a foundation for building Next.js applications with TypeScript, ESLint, Prettier, and Tailwind CSS. It includes pre-configured setups for maintaining code quality and formatting standards, along with pre-commit hooks for seamless development.
 
 ## Features
 
