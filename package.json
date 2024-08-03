@@ -1,6 +1,6 @@
 {
-    "name": "next.js-starter-pack",
-    "version": "0.1.0",
+    "name": "google-translator-react",
+    "version": "1.0.0",
     "private": true,
     "type": "module",
     "scripts": {
@@ -11,7 +11,7 @@
         "check-format": "npx prettier . --check",
         "format": "prettier --write .",
         "check-types": "tsc --noEmit",
-        "prepare": "npm run lint && npm run check-types && npm run check-format"
+        "checks": "npm run lint && npm run check-types && npm run check-format"
     },
     "dependencies": {
         "next": "14.2.4",
