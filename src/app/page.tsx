@@ -18,7 +18,7 @@ export default function Page() {
                 >
                     <Translate className="size-6" />
                     <span className="sr-only">
-                        Google Translate Language Switcher
+                        Translate Language Switcher
                     </span>
                 </Link>
             </header>
@@ -140,7 +140,7 @@ export default function Page() {
             </main>
             <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
                 <p className="text-xs text-muted-foreground">
-                    &copy; 2024 Google Translate Language Switcher App. All
+                    &copy; 2024 Translate Language Switcher App. All
                     rights reserved.
                 </p>
                 <nav className="flex gap-4 sm:ml-auto sm:gap-6">
