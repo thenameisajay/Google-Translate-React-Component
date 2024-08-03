@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Google Translate Language Switcher",
+    title: "Translate Language Switcher",
     description:
         "Integrate Google Translate into a React application, allowing users to switch languages on the fly.",
 };
