@@ -59,7 +59,7 @@ export default function Page() {
                                     Translate Any Language
                                 </h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    Our translation feature supports over 100
+                                    The translation feature supports over 100
                                     languages, making it easy to reach a global
                                     audience.
                                 </p>
