@@ -31,7 +31,7 @@ export default function Page() {
                                     Translate Your Content Effortlessly
                                 </h1>
                                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                                    Our powerful translation feature makes it
+                                    The powerful translation feature makes it
                                     easy to reach a global audience. With just a
                                     click, your content can be translated into
                                     multiple languages.
