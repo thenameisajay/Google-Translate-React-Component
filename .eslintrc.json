@@ -1,73 +1,78 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:@tanstack/eslint-plugin-query/recommended",
-    "next/core-web-vitals"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": true,
-    "ecmaVersion": 2021,
-    "sourceType": "module"
-  },
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "@tanstack/query"],
-  "rules": {
-    "@typescript-eslint/no-unsafe-argument": "warn",
-    "@typescript-eslint/await-thenable": "warn",
-    "@typescript-eslint/no-explicit-any": "warn",
-    "@typescript-eslint/prefer-optional-chain": "warn",
-    "@typescript-eslint/no-floating-promises": "warn",
-    "@typescript-eslint/consistent-type-imports": [
-      "warn",
-      {
-        "prefer": "type-imports",
-        "fixStyle": "inline-type-imports"
-      }
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@tanstack/eslint-plugin-query/recommended",
+        "next/core-web-vitals"
     ],
-    "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/no-misused-promises": [
-      "error",
-      {
-        "checksVoidReturn": {
-          "attributes": false
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": true,
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "react-hooks",
+        "@tanstack/query"
+    ],
+    "rules": {
+        "@typescript-eslint/no-unsafe-argument": "warn",
+        "@typescript-eslint/await-thenable": "warn",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/prefer-optional-chain": "warn",
+        "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/consistent-type-imports": [
+            "warn",
+            {
+                "prefer": "type-imports",
+                "fixStyle": "inline-type-imports"
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                "checksVoidReturn": {
+                    "attributes": false
+                }
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "off",
+        "react/button-has-type": [
+            "error",
+            {
+                "button": true,
+                "submit": true,
+                "reset": true
+            }
+        ],
+        "react/hook-use-state": ["error", { "allowDestructuredState": false }],
+        "react/prop-types": "off" // Disable this rule globally for now
+    },
+    "ignorePatterns": [
+        "tailwind.config.js",
+        "postcss.config.js",
+        "prettier.config.mjs",
+        "prettier.config.js",
+        "webpack.config.cjs",
+        "public/compiled",
+        "next.config.mjs",
+        "target"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
         }
-      }
-    ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-uses-react": "off",
-    "react/button-has-type": [
-      "error",
-      {
-        "button": true,
-        "submit": true,
-        "reset": true
-      }
-    ],
-    "react/hook-use-state": ["error", { "allowDestructuredState": false }],
-    "react/prop-types": "off" // Disable this rule globally for now
-  },
-  "ignorePatterns": [
-    "tailwind.config.js",
-    "postcss.config.js",
-    "prettier.config.mjs",
-    "prettier.config.js",
-    "webpack.config.cjs",
-    "public/compiled",
-    "next.config.mjs",
-    "target"
-  ],
-  "settings": {
-    "react": {
-      "version": "detect"
     }
-  }
 }

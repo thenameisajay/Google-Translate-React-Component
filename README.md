@@ -1,2 +1,1 @@
 # Google Translator (React)
-
