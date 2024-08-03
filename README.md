@@ -4,7 +4,7 @@ This repository contains a React component for integrating Google Translate into
 
 ## Table of Contents
 
--   [Installation](#installation
+-   [Installation](#installation)
 -   [Usage](#usage)
 -   [Styling](#styling)
 -   [Comparison with Established Libraries](#comparison-with-established-libraries)
