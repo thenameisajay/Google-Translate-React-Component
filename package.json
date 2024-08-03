@@ -11,7 +11,8 @@
         "check-format": "npx prettier . --check",
         "format": "prettier --write .",
         "check-types": "tsc --noEmit",
-        "checks": "npm run lint && npm run check-types && npm run check-format"
+        "checks": "npm run lint && npm run check-types && npm run check-format",
+        "prepare": "husky"
     },
     "dependencies": {
         "next": "14.2.4",
