@@ -143,7 +143,7 @@ export default function Page() {
                 </p>
                 <nav className="flex gap-4 sm:ml-auto sm:gap-6">
                     <Link
-                        href="#"
+                        href="https://github.com/thenameisajay/Google-Translate-Language-Switcher"
                         className="flex text-xs underline-offset-4 hover:text-blue-500 hover:underline"
                         prefetch={false}
                     >
