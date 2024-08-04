@@ -58,6 +58,8 @@ import { useEffect } from "react";
 
 // src/components/GoogleTranslator.js
 
+// src/components/GoogleTranslator.js
+
 // ?Fixed : ?Docs related to massive bug : https://stackoverflow.com/questions/50298201/react-js-google-translate-not-working
 // ?Fixed : The duplication or multiplication of the language bars is as a result of document.body.appendChild(script) being called every time the page loads/renders.
 const GoogleTranslator = ({ show }) => {

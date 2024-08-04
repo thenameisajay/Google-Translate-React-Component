@@ -17,9 +17,7 @@ export default function Page() {
                     prefetch={false}
                 >
                     <Translate className="size-6" />
-                    <span className="sr-only">
-                        Translate Language Switcher
-                    </span>
+                    <span className="sr-only">Translate Language Switcher</span>
                 </Link>
             </header>
             <main className="flex-1">
@@ -59,7 +57,7 @@ export default function Page() {
                                     Translate Any Language
                                 </h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    The translation feature supports over 100
+                                    The translation feature supports over 50+
                                     languages, making it easy to reach a global
                                     audience.
                                 </p>
@@ -140,8 +138,8 @@ export default function Page() {
             </main>
             <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
                 <p className="text-xs text-muted-foreground">
-                    &copy; 2024 Translate Language Switcher App. All
-                    rights reserved.
+                    &copy; 2024 Translate Language Switcher App. All rights
+                    reserved.
                 </p>
                 <nav className="flex gap-4 sm:ml-auto sm:gap-6">
                     <Link

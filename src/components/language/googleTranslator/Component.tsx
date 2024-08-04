@@ -16,6 +16,8 @@ const GoogleTranslator = ({ show }: { show: boolean }) => {
                     new window.google.translate.TranslateElement(
                         {
                             pageLanguage: "en",
+                            includedLanguages:
+                                "af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,et,eu,fa,fi,fr,fy,ga,gd,gl,gu,ha,haw,he,hi,hmn,hr,ht,hu,hy,id,ig,is,it,ja,jw,ka,kk,km,kn,ko,ku,ky,la,lt,lv,mg,mi,ms,mt,my,ne,nl,no,ny,pa,pl,pt,ro,ru,sd,si,sk,sl,sm,sn,so,sq,sr,st,sv,sw,ta,te,tg,th,tr,uk,ur,uz,vi,xh,yi,yo,zh-CN,zh-TW,zu",
                             // @ts-expect-error : Types are not available for google translate or not of concern at the moment.
                             layout: window.google.translate.TranslateElement
                                 .InlineLayout.SIMPLE,
