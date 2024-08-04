@@ -36,9 +36,10 @@ const buttonVariants = cva(
 );
 
 export interface ButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "type">, // Omitting 'type' from ButtonHTMLAttributes since we define it separately
         VariantProps<typeof buttonVariants> {
     asChild?: boolean;
+    type: "button" | "submit" | "reset"; // Define 'type' as a compulsory prop with specific values
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

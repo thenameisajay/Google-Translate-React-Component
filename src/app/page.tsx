@@ -148,9 +148,9 @@ export default function Page() {
                         prefetch={false}
                     >
                         <Button
+                            type="button"
                             className="flex text-sm text-blue-500 hover:bg-none hover:text-blue-500"
                             variant="ghost"
-                            type="button"
                         >
                             <span>
                                 <GithubLogo className="mr-1 h-5 w-6" />
