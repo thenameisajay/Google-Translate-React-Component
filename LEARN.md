@@ -50,26 +50,11 @@ import { useEffect } from "react";
 
 // src/components/GoogleTranslator.js
 
-// src/components/GoogleTranslator.js
-
-// src/components/GoogleTranslator.js
-
-// src/components/GoogleTranslator.js
-
-// src/components/GoogleTranslator.js
-
-// src/components/GoogleTranslator.js
-
-// ?Fixed : ?Docs related to massive bug : https://stackoverflow.com/questions/50298201/react-js-google-translate-not-working
-// ?Fixed : The duplication or multiplication of the language bars is as a result of document.body.appendChild(script) being called every time the page loads/renders.
 const GoogleTranslator = ({ show }) => {
     useEffect(() => {
         if (show) {
-            // @ts-expect-error : Types are not available for google translate or not of concern at the moment.
             if (!window.googleTranslateElementInit) {
-                // @ts-expect-error : Types are not available for google translate or not of concern at the moment.
                 window.googleTranslateElementInit = () => {
-                    // @ts-expect-error : Types are not available for google translate or not of concern at the moment.
                     new window.google.translate.TranslateElement(
                         {
                             pageLanguage: "en",
@@ -126,7 +111,6 @@ import React, { useState } from "react";
 
 import { Globe } from "@phosphor-icons/react";
 
-import { Button } from "./Button";
 import GoogleTranslator from "./GoogleTranslator";
 
 // Assume you have a Button component
@@ -138,16 +122,15 @@ const LanguageSwitcher = ({ className }) => {
         <div
             className={`relative flex flex-col items-center justify-center space-x-2 hover:bg-inherit md:flex-row ${className}`}
         >
-            <Button
+            <button
                 className="flex text-sm text-blue-500 hover:bg-none hover:text-blue-500"
-                variant="ghost"
-                disabled={showTranslate}
                 onClick={() => setShowTranslate(true)}
                 type="button"
+                disabled={showTranslate}
             >
                 <Globe className="mx-1 h-6 w-6" color="#4689F6" />
                 Change Language
-            </Button>
+            </button>
             <GoogleTranslator show={showTranslate} />
         </div>
     );

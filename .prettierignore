@@ -4,3 +4,4 @@ coverage
 
 # Ignore the output of the Tailwind CLI
 tailwind.config.ts
+LEARN.md
